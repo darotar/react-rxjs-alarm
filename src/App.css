@@ -1,27 +1,5 @@
-.App {
-  text-align: center;
-}
-
 .display {
   display: block;
   margin: 0.2rem;
   height: 2.2rem;
-}
-
-button {
-  font-size: 0.8rem;
-  background: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border: 1px solid lightgray;
-  border-radius: 0.2rem;
-  margin: 0.2rem;
-  color: white;
-}
-
-.snooze {
-  background: green;
-}
-.dismiss {
-  background: tomato;
 }

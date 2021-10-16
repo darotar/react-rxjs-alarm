@@ -9,10 +9,10 @@ import {
   filter,
 } from "rxjs/operators";
 
-import { ActionTypes, Messages } from "./enums";
+import { ActionTypes, Messages } from "../enums";
 
-const INTERVAL: number = 250;
-const STARTING_NUMBER: number = 5;
+const INTERVAL = 250;
+const STARTING_NUMBER = 5;
 
 const countdown$: Observable<number> = interval(INTERVAL)
   .pipe(
@@ -41,7 +41,7 @@ export const observable$: Observable<number | Messages> = concat(
   of(Messages.Sleep)
 );
 
-export const dispatch: (actionType: string) => () => void =
+export const dispatch =
   (actionType = "") =>
   () =>
     actions$.next(actionType);
